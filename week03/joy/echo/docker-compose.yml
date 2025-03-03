@@ -1,0 +1,7 @@
+version: "3"
+services:
+  echo:
+    build: .
+#    image: example/echo:latest
+    ports:
+      - 9000:8080

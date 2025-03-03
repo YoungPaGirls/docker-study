@@ -1,0 +1,21 @@
+version: "3"
+services:
+  master:
+    container_name: master
+    image: jenkins/jenkins:lts-jdk17
+    platform: linux/arm64
+    ports:
+      - 8080:8080
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+    links:
+      - agent01
+
+  agent01:
+    container_name: agent01
+    image: jenkins/inbound-agent
+    environment:
+      - JENKINS_URL=http://master:8080
+      - JENKINS_AGENT_NAME=agent01
+      - JENKINS_SECRET={토큰}
+    restart: unless-stopped
