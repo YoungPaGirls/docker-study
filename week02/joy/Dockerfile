@@ -1,5 +1,7 @@
 FROM golang:1.9
 
-RUN mkdir /echo
-COPY main.go /echo
-CMD ("go", "run", "/echo/main.go"]
+WORKDIR /echo
+COPY main.go .
+RUN go build -o echo main.go
+
+CMD ["/echo/echo"]
