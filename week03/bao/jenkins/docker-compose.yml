@@ -1,0 +1,14 @@
+services:
+  master:
+    container_name: master
+    image: jenkins/jenkins:lts
+    ports:
+      - 8080:8080
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+
+  slave01:
+    container_name: slave01
+    image: jenkinsci/ssh-slave
+    environment:
+      - JENKINS_SLAVE_SSH_PUBKEY=ssh-rsa nMvqzyINuVIoxJnuDfHIxRFYTzwHfrvLmJ1jWkKS5xU 

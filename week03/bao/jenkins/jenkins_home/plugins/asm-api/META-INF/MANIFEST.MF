@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: ASM API Plugin
+Specification-Version: 9.7
+Implementation-Title: ASM API Plugin
+Implementation-Version: 9.7.1-95.v9f552033802a_
+Group-Id: io.jenkins.plugins
+Artifact-Id: asm-api
+Short-Name: asm-api
+Long-Name: ASM API Plugin
+Url: https://github.com/jenkinsci/asm-api-plugin
+Plugin-Version: 9.7.1-95.v9f552033802a_
+Hudson-Version: 2.440.3
+Jenkins-Version: 2.440.3
+Plugin-Developers: 
+Support-Dynamic-Loading: true
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/license/mit/
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/asm-api-plugi
+ n
+Plugin-ScmTag: 9f552033802a0a538a42b1a8da2fc0c30f0de8e2
+Plugin-ScmUrl: https://github.com/jenkinsci/asm-api-plugin
+Plugin-GitHash: 9f552033802a0a538a42b1a8da2fc0c30f0de8e2
+Implementation-Build: 9f552033802a0a538a42b1a8da2fc0c30f0de8e2
+
