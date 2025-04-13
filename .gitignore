@@ -24,3 +24,5 @@ Temporary Items
 .idea
 
 registry-data/
+
+node_modules/
