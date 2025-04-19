@@ -1,0 +1,9 @@
+services:
+  my-db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: pwd1234
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+    ports:
+      - 3306:3306
