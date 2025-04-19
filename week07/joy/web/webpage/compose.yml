@@ -1,0 +1,5 @@
+services:
+  my-web-server:
+    build: .
+    ports:
+      - 80:80
